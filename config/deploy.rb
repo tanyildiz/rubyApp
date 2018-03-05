@@ -5,6 +5,7 @@ set :application, "rubyApp"
 set :repo_url, "https://github.com/tanyildiz/rubyApp.git"
 
 set :deploy_to, '/home/deploy/rubyApp'
+set :passenger_restart_with_touch, true
 #set :default_env, { 'PASSENGER_INSTANCE_REGISTRY_DIR' => '/home/deploy/passenger_temp' }
 
 append :linked_files, "config/database.yml", "config/secrets.yml"
